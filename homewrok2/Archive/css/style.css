@@ -12,6 +12,7 @@ header,
 footer {
     text-align: center;
     background: lightslategray;
+    padding: 10px;
 }
 
 main {
