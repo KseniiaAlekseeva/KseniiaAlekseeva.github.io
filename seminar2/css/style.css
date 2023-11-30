@@ -27,6 +27,8 @@ main {
 nav {
     background: burlywood;
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
 a {
