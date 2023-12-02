@@ -1,6 +1,6 @@
 body {
     background: silver;
-    background: url(../img/meinkun.webp);
+    /* background: url(../img/meinkun.webp); */
 }
 
 .container {
@@ -10,6 +10,18 @@ body {
 
 .first {
     color: red;
+}
+
+#message {
+    width: 50%;
+}
+
+#error {
+    color: red;
+}
+
+#history b {
+    color: green;
 }
 
 header,
@@ -28,7 +40,7 @@ nav {
     background: burlywood;
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 a {

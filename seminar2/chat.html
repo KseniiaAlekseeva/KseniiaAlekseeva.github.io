@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Chat</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -15,10 +16,17 @@
             <a href="about.html">About</a>
         </nav>
         <main>
-            <input type="text" placeholder="Message">
-            <button>Send</button>
+            <input type="text" placeholder="Name" id="name">
+            <input type="text" placeholder="Message" id="message">
+            <button onclick="send()">Send</button>
+            <div id="history">
+                <p id="output"></p>
+                <p id="error"></p>
+            </div>
+
         </main>
         <footer>&copy;2023</footer>
     </div>
+
 </body>
 </html>

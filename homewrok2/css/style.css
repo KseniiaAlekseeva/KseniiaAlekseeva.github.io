@@ -21,7 +21,6 @@ main {
 
 .images {
     background: white;
-    padding: 10px;
     display: flex;
     justify-content: space-around;
 }
