@@ -29,16 +29,16 @@ function send() {
     
     if (message == "") {
         document.getElementById("error").innerText = "Error! Enter your message."
+        return
     }
-    else {
-        if (name == "") {
-            name="Guest"
-        }
 
-        let history = document.getElementById("history")
-        let p = document.createElement("p")
-        p.innerHTML = `<b>${name}</b>: ${message}`
-        document.getElementById("history").appendChild(p)
+    if (name == "") {
+        name = "Guest"
     }
+
+    let history = document.getElementById("history")
+    let p = document.createElement("p")
+    p.innerHTML = `<b>${name}</b>: ${message}`
+    document.getElementById("history").appendChild(p)
 
 }

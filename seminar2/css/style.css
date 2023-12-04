@@ -33,7 +33,7 @@ footer {
 
 main {
     background: aqua;
-    pad: 10px;
+    padding: 0px 10px;
 }
 
 nav {
@@ -45,7 +45,7 @@ nav {
 
 a {
     text-decoration: none;
-    color: black;
+    color: blue;
 }
 
 nav a {
