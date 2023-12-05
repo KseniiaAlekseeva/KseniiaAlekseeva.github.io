@@ -16,16 +16,13 @@
 //     alert(`${x} / ${y} = ${result}`)
 // }
 
-var str="";
+get();
+setInterval(get, 2000)
 
 function send() {
     let name = document.getElementById("name").value
     let message = document.getElementById("message").value
-    document.getElementById("message").value = ""
-    document.getElementById("output").innerText = ""
     document.getElementById("error").innerText = ""
-
-    main = document.getElementsByName("main")
     
     if (message == "") {
         document.getElementById("error").innerText = "Error! Enter your message."
@@ -36,9 +33,25 @@ function send() {
         name = "Guest"
     }
 
-    let history = document.getElementById("history")
-    let p = document.createElement("p")
-    p.innerHTML = `<b>${name}</b>: ${message}`
-    document.getElementById("history").appendChild(p)
+    (async () => {
+        const response = await fetch('chat.php?message=' + name + ": " + message);
+        const answer = await response.text();
+        document.getElementById("message").value = ""
+    }
+    )();
 
+    // let history = document.getElementById("history")
+    // let p = document.createElement("p")
+    // p.innerHTML = `<b>${name}</b>: ${message}`
+    // document.getElementById("history").appendChild(p)
+
+}
+
+function get() {
+    (async () => {
+        const response = await fetch('chat.php');
+        const answer = await response.text();
+        document.getElementById("messages").innerText = answer
+    }
+    )();
 }

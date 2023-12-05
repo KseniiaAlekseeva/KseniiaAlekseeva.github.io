@@ -1,0 +1,12 @@
+Guest: Hello!
+Admin: Hi
+Admin: How are you?
+Masha: Not good!
+Guest: And you?
+Guest: Let's swim
+Masha: Ha-ha
+Guest: `z
+Nina: Ha-ha-ha
+Nina: Go away!
+Nina: Ku-ku!
+Guest: Don't be so loud
