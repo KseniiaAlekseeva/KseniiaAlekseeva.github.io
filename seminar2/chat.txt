@@ -10,3 +10,5 @@ Nina: Ha-ha-ha
 Nina: Go away!
 Nina: Ku-ku!
 Guest: Don't be so loud
+Guest: Hello, guys!
+Alice: Go away!
